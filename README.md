@@ -1,4 +1,4 @@
-<p align="center"><img src="src/images/logo.jpg" alt="Vivvaa React Tutorial App" height="100px" width="100px"></p>
+<p align="center"><img src="src/images/logo.png" alt="Vivvaa React Tutorial App" height="100px" width="100px"></p>
 
 # Vivvaa React Tutorial App  [![CircleCI](https://circleci.com/gh/jumaallan/AndelaMedManager/tree/master.svg?style=shield)](https://circleci.com/gh/jumaallan/Andela-Med-Manager/tree/master)   [![Maintainability](https://api.codeclimate.com/v1/badges/029ded8e7747a58f1095/maintainability)](https://codeclimate.com/github/jumaallan/Andela-Med-Manager/maintainability)  [![Test Coverage](https://api.codeclimate.com/v1/badges/029ded8e7747a58f1095/test_coverage)]
 
