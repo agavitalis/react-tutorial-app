@@ -16,6 +16,12 @@ class IntroductionScreen extends React.Component {
     static navigationOptions = {
         title: 'What is ECMAScript 6?',
     };
+
+    renderRow(data){
+        return(
+            <Text>{`\u2022 ${data}`}</Text>
+        )
+    }
     
 
     render() {
@@ -51,6 +57,7 @@ class IntroductionScreen extends React.Component {
                             ]}
                             renderItem={({item})=><Text>{item.key}</Text>}
                             leftAvatar={'.'}
+                            renderRow={this.renderRow}
                             
                     />
                     

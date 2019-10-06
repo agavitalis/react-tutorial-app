@@ -10,6 +10,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-native-fontawesome": "^0.1.0",
+    "@react-native-community/async-storage": "^1.5.0",
     "install": "^0.12.2",
     "react": "16.8.3",
     "react-native": "0.59.9",

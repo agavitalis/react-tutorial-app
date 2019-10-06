@@ -1,5 +1,6 @@
 import React from 'react';
-import {Image, Text, View, TouchableOpacity, AsyncStorage} from  'react-native'
+import {Image, Text, View, TouchableOpacity} from  'react-native'
+import AsyncStorage from '@react-native-community/async-storage';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome'
 import {faHome, faShareAltSquare, faSignOutAlt, faAngleDoubleRight, faClipboardCheck, faUserShield, faNotEqual, faUserSecret} from '@fortawesome/free-solid-svg-icons'
 import Styles from './Sidebar.style'
@@ -83,7 +84,13 @@ class Sidebar extends React.Component {
     }
 
     _signOutAsync = async () => {
-      await AsyncStorage.clear();
+
+      try {
+        await AsyncStorage.clear()
+      } catch(e) {
+        // clear error
+      }
+      
       this.props.navigation.navigate('Auth');
    };
 }

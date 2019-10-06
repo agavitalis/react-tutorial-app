@@ -13,17 +13,17 @@ const Styles = StyleSheet.create({
         justifyContent: 'center',
     },
     topic:{
-        paddingTop: 10,
+        paddingTop: 5,
         paddingBottom: 10
     },
     topic_text:{
         fontSize:25,
-        color:'#000',
+        color:'#23232b',
         fontWeight:'700'
     },
     horizontal_line:{
         width:'100%',
-        borderBottomColor:'#000',
+        borderBottomColor:'#23232b',
         borderBottomWidth: 1,
     },
     heading:{
@@ -32,7 +32,7 @@ const Styles = StyleSheet.create({
     },
     heading_text:{
         fontSize:20,
-        color:'#000',
+        color:'#23232b',
         fontWeight:'500'
     },
     content_text:{

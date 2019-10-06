@@ -43,7 +43,7 @@ class ES6TopicScreen extends React.Component {
                         <Text style={Styles.topic_text}>What is ECMAScript 6?</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity  style={Styles.topic} onPress={() => this.props.navigation.navigate('Topics')}>
+                    <TouchableOpacity  style={Styles.topic}  onPress={() => this.props.navigation.navigate(NavigationActions.navigate({routeName:'ES6Stack', action:NavigationActions.navigate({routeName:'BrowserSupport'})}))}>
                         <Image
                             source={require('../../images/es6.png')}
                             style={{ width: 20, height: 20 }}
@@ -51,7 +51,7 @@ class ES6TopicScreen extends React.Component {
                         <Text style={Styles.topic_text}>Browser Support for ES6 (ECMAScript 2015)</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity  style={[Styles.topic,Styles.topic_color]} >
+                    <TouchableOpacity  style={[Styles.topic,Styles.topic_color]} onPress={() => this.props.navigation.navigate(NavigationActions.navigate({routeName:'ES6Stack', action:NavigationActions.navigate({routeName:'JavaScriptLet'})}))}>
                         <Image
                             source={require('../../images/es6.png')}
                             style={{ width: 20, height: 20 }}
@@ -59,7 +59,7 @@ class ES6TopicScreen extends React.Component {
                         <Text style={Styles.topic_text}>JavaScript let</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity  style={Styles.topic} >
+                    <TouchableOpacity  style={Styles.topic} onPress={() => this.props.navigation.navigate(NavigationActions.navigate({routeName:'ES6Stack', action:NavigationActions.navigate({routeName:'JavaScriptConst'})}))}>
                         <Image
                             source={require('../../images/es6.png')}
                             style={{ width: 20, height: 20 }}
@@ -67,7 +67,7 @@ class ES6TopicScreen extends React.Component {
                         <Text style={Styles.topic_text}>JavaScript const</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity  style={[Styles.topic,Styles.topic_color]} >
+                    <TouchableOpacity  style={[Styles.topic,Styles.topic_color]} onPress={() => this.props.navigation.navigate(NavigationActions.navigate({routeName:'ES6Stack', action:NavigationActions.navigate({routeName:'Exponentiation'})}))}>
                         <Image
                             source={require('../../images/es6.png')}
                             style={{ width: 20, height: 20 }}
