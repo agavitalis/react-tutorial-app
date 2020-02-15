@@ -3,6 +3,7 @@ import {View,ScrollView, AsyncStorage,Image,TouchableOpacity, Text } from 'react
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome'
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import Styles from './Topics.style'
+import { NavigationActions } from 'react-navigation';
 
 class ReactTopicScreen extends React.Component {
     constructor() {
@@ -34,7 +35,7 @@ class ReactTopicScreen extends React.Component {
                     <Text style={Styles.header_text}>Learn ReactJS</Text>
                 </View>
                 <View style={Styles.body}>
-                    <TouchableOpacity  style={[Styles.topic,Styles.topic_color]} onPress ={()=>this.props.navigation.navigate('OverView')}>
+                    <TouchableOpacity  style={[Styles.topic,Styles.topic_color]}  onPress={() => this.props.navigation.navigate(NavigationActions.navigate({routeName:'ReactStack', action:NavigationActions.navigate({routeName:'ContentOverview'})}))}>
                         <Image
                             source={require('../../images/react.png')}
                             style={{ width: 20, height: 20 }}

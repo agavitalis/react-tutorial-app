@@ -14,6 +14,7 @@ import SignInScreen from './src/components/auth/SignIn'
 import HomeScreen from './src/components/home/Home'
 import TopicsStack from './src/components/topics/TopicsStack'
 import ES6Stack from './src/components/content/es6/ES6Stack'
+import ReactStack from './src/components/content/react/ReactStack'
 
 
 class AuthLoadingScreen extends React.Component {
@@ -67,7 +68,14 @@ const AppStack = createStackNavigator(
     navigationOptions:{
       header:null
     }
+  },
+  ReactStack:{
+    screen: ReactStack,
+    navigationOptions:{
+      header:null
+    }
   }
+
 });
 
 //create the authentication stack

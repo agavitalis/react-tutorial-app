@@ -49,7 +49,6 @@ class IntroductionScreen extends React.Component {
                         data={[
                             {key: 'JavaScript let'},
                             {key: 'JavaScript const'},
-                            {key: 'JavaScript let'},
                             {key: 'Default parameter values'},
                             {key: 'Array.find()'},
                             {key: 'Array.findIndex()'},
