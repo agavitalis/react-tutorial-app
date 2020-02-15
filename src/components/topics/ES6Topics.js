@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,ScrollView, AsyncStorage,Image,TouchableOpacity, Text } from 'react-native';
+import {View,ScrollView,Image,TouchableOpacity, Text } from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome'
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import Styles from './Topics.style'
@@ -147,7 +147,6 @@ class ES6TopicScreen extends React.Component {
     }
 
     _signOutAsync = async () => {
-        await AsyncStorage.clear();
         this.props.navigation.navigate('Auth');
     };
 }

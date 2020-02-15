@@ -1,6 +1,5 @@
 import React from 'react'
 import {Image, View, Text,ImageBackground, TouchableOpacity } from 'react-native'
-import AsyncStorage from '@react-native-community/async-storage';
 import LinearGradient from 'react-native-linear-gradient'
 import Styles from './SignIn.style'
 
@@ -38,7 +37,7 @@ class SignInScreen extends React.Component {
 
     //login logic here
     try {
-      await AsyncStorage.setItem('@userToken', 'Username');
+    
     } catch(e) {
       // read error
     }

@@ -25,8 +25,8 @@ You will need the following to run this project:
 * Clone the Repository from Github
 * Open the project folder using any editor of choice
 * Run the command `npm install`
-* Start the project using the command `react-native run andriod` for Andriod Devices
-* Start the project with the command `react-native run ios` for IOS Devices
+* Start the project using the command `react-native run-android` for Andriod Devices
+* Start the project with the command `react-native run-ios` for IOS Devices
 
 ### The App Layout Page
 This application has a simple layout, with an attractive and awesome interface as shown:

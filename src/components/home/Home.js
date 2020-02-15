@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Image, ScrollView,View, Text,TouchableOpacity } from 'react-native'
-import AsyncStorage from '@react-native-community/async-storage';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 import LinearGradient from 'react-native-linear-gradient'
@@ -86,7 +85,6 @@ class HomeScreen extends React.Component {
     };
 
     _signOutAsync = async () => {
-        await AsyncStorage.clear();
         this.props.navigation.navigate('Auth');
     };
 }
